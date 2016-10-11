@@ -1,7 +1,5 @@
 # SIN01 Sociální informatika
 
-
-~~foo~~
 ...CHYBÍ ZÁPIS Z PRVNÍ PŮL HODINY...
 
 ## Technický charakter ICT
@@ -244,4 +242,36 @@
 * **Rusko** -- výceúrovňový pohled na změny ve spoleřnosti s důrazem na možná nebezpečí, uplatnění ICT v sociální společnosti
 * **USA** -- konkrétní jednotky a organizace, konkrétní praxe, empirický výzkum
 
-příště: Kvalitativní a kvantitativní výzkum na internetu
+# Kvantitativní a kvalitativní výzkum v sociální informatice
+
+## ICT jako nástroj
+ * prostředek ke zkoumání denoménu
+ * **kvalitativní** -- online rozhovory, pokusné skupiny, analýza dokumentů, malý vzorek & hodně materiálu
+ * **kvantitativní** -- online průzkumy ankety, velký vzorek & méně materiálu
+ * **obsahová analýza**
+ * **netrnografie** -- jak se chová skupina užvatelů v daném prostředí (ve hrách)
+
+## ICT jako předmět** -- chování lidí při používání ICT
+
+## Co všechno ovlivňuje odpovědi respondentů?
+* motivace
+* digitální vzdělanost
+* postoje uživatelů k technologiím
+* design dotazníku
+* obavy o soukromí
+
+## Pozitiva výzkumů přes internet
+* velký rozsah vzorku
+* malé náklady
+* responsivní volba otázek
+* anonymita
+* otevřenost respondentů
+* konfortnost dotazovaných
+* minimální ovlivnění tazatelem
+
+## Negativa
+* zkreslené odpovědi
+* nedostatečná kontrola
+* omezení neverbálních složek komunikace
+* technologické nároky
+* zabezpečení důvěrnosti a bezpečnosti
