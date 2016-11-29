@@ -275,3 +275,68 @@
 * omezení neverbálních složek komunikace
 * technologické nároky
 * zabezpečení důvěrnosti a bezpečnosti
+
+_Já inteligentka si neuložila zápis z minulé hodiny._
+
+# Internet
+
+## Historie
+* Síť Arpanet (1969)
+* 1973 připojena Evropa (Norsko)
+* cíl: zjednodušení komunikce, sdílení informací
+* 1992 připojeno Československo (ČVUT)
+* 1998 vznik Googlu
+* za začátku mířeno na vojenctví, později se přesouvá do akademické sféry a následně k obyčejnýnm lidem
+
+## Součastnost
+* WAN nemá vlastníka
+* infrastruktura je provozována komerčně (ISP Internet Sevice Provider)
+* rizika: soukromí, zločin, zneužití...
+* každý druhý uživatel Internetu je Asiat
+* zhruba 1 miliarda webových stránek
+
+## Služby Internetu
+
+### WWW
+* systém serverů, ochovávajících dokumenty
+* distribuovaný systém
+* protokol HTTP
+* hypertext = způsob organizace informační jednotky
+* klient-server
+* Tim Berners-Lee, CERN (1989)
+
+### Webový server
+* Apache, Internet Information Sevices, Lotus Domino, Nestcape Enterprise, Fast Track, Nerware
+
+### E-mail
+### Instant messaging
+### IP telefonie
+### Videokonference
+### Unified communication
+### Vyhledávání na Internetu
+* u nás Seznam (30 %)
+* Google světově cca 70 %
+
+### Cíle sémantického webu
+* integrovat data z různých zdrojů
+* umožnit výměnu dat mezi aplikacemi
+* kvalitnější strojové vyhledávání
+* popsat vztahy
+* přiřadit význam
+
+### RDF (Resource Description Framework)
+* popis zdrojů na webu
+* Triplestores -- databáze optimalizované pro ukládání RDF
+
+#### Ontologie
+* model pro popissvěta složeného z typů, vlastností a vzathů
+	* individua
+	* třídy
+	* atributy
+	* relace
+	* funkční výrazy
+* interference pomocí definovaných pravidel (viz Prolog)
+* interferenční stroje
+* SPARQL -- ukládání dat pomocí trojic -- dotazovací jazyk
+
+**croudsourcing** a **courdfounding**
