@@ -1,0 +1,149 @@
+Primitivní datové typy:
+- integrální typy (celočíselné: int, long, short, byte, char)
+- čísla s pohyblivou řádovou čárkou (nepoužívat float 32 bitů, lepší je double 64 bitů)
+- logické hodnoty
+
+- atributy private
+- metody public
+
+
+###### KONSTANTY ######
+
+public static final int MAX_LENGTH = 4;
+
+
+###### PŘEPSÁNÍ METODY ######
+
+@Override
+
+
+###### VYHOZENÍ VÝJIMKY ######
+
+@throw IlleagalArgumentException if d is not number
+if (d == 0) {
+    throw new IlleagalArgumentException("d");
+}
+
+
+###### ZPRACOVÁNÍ VÝJIMKY ######
+- třeba zachycení
+
+try {
+    převod stringu na int
+} catch(IllegalArgumentException ex) {
+    System.out.println("Invalid coordinates!")
+}
+
+
+###### ASSERT ######
+
+if (d != 0) {
+    denominator = d;
+}
+
+assert d != 0;
+
+
+###### PŘETYPOVÁNÍ ######
+
+(double) numer
+
+
+###### Ověření třídy ######
+
+if (obj instanceof Compane) {}
+
+
+###### KOPÍROVÁNÍ ######
+- třeba seznamu
+
+presents.addAll(presents);
+
+
+###### Vracet nemodifikovatelné kolekce! ######
+
+return Collections.unmodifiableList(presents);
+
+Map<Company, Integer> map = new Hashmap<>();
+
+map.put();
+
+
+###### EQUALS ######
+== je porovnání ukazatelů
+equals je porovnání obsahu na základě nějakého kódu
+
+public boolen equals (Object object) {
+    if (object instanceof Vertex2D()) {
+        return false;
+    }
+
+    Vertex obj = (Vertex2D)other;
+    return x == obj.getX() && y == obj.getY();
+}
+
+this.name.equals(c.name);
+
+
+###### HASH code ######
+
+public int hashCode() {
+    int result = (int) (31 * x);
+    result += 31 * y;
+    return result;
+}
+
+public int hashCode() {
+    return this.name.hashCode();
+}
+
+###### OPEN ######
+
+public static void writeClose(File file) {
+    try (FileOutputStrem fos = new FileOutputStrem("out.txt")) {
+        write(fos);
+    } catch(IOException ex) {
+        System.err.println(ex.getMessage());
+    }
+ }
+
+
+ ###### Přirozené uspořádání ######
+ - tato metoda může být jen jedna
+ - vrazím to přímo do třídy, kde chci něco uspořádávat
+
+Vertex implements Comparable<Vertex> {
+    public int compareTo(Vertex v)
+}
+
+[-1,3].compareTo([4,2])
+=> -5 (první je menší než druhý)
+=> 0 (jsou stejně velké)
+=> 3 (první je větší)
+
+
+###### Komparátor ######
+- komparátorů může být víc
+- ve ve vlastní třídě
+- mohou fungovat "nelogicky"
+
+public MyNewGreatComparator implements Comparator<Vertex> {
+    public int compare(Vertex v1, Vertex v2) {
+    }
+}
+
+
+###### NAČÍTÁNÍ TEXTOVÉHO VSTUPU ######
+
+BufferReader reader = new BufferReader(new File Reader("INPUT.txt"));
+
+String line = reader.readLine();
+while (reader != null) {
+    new Employee();
+    line = reader.readline()
+}
+
+
+###### Vytvoření .jar v IDEI ######
+File > Project Structure > Artifacts > "plus" > JAR > From modules with dependencies > OK
+Build > Build Artifacts > Build
