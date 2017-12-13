@@ -1,38 +1,35 @@
-### Různá mocnost nekonečen
+### Definice $$$\mathbb N$$$
 
-***Nelze najít bijekci mezi $$$\mathbb N \rightarrow P(\mathbb N)$$$***
+*Př.:* -- postupně dokazuji
 
-- bijekce podle $$$f(n) = \{n\}$$$ pro každé $$$n \in \mathbb N$$$
-- Předpokládejme pro spor, že $$$g: \mathbb N \rightarrow P(\mathbb N)$$$ je surjekce.
+- Chceme $$$(\mathbb N, s, 0)$$$
+- Máme: zobrazení $$$s: \mathbb N \rightarrow \mathbb N; 0 \in \mathbb N$$$
 
-- "tabulka"
-- Vybereme množinu $$$A$$$, definovanou: $$$A = \{a \not \in g(a)\}$$$ (beru diagonálu -- pokud číslo v a-tém sloupci i řádku, tzn. $$$a$$$
-- as
+- $$$(\forall x \in \mathbb N)(s(x) \not = 0)$$$
+- $$$(\forall x, y \in \mathbb N)(s(x) = s(y) \Rightarrow x=y)$$$
+- $$$(\forall M \in P(\mathbb N))((0 \in M \wedge (\forall x \in M)(s(x) \in M)) \Rightarrow M= \mathbb N)$$$
 
+***Sčítání na $$$\mathbb N$$$***
+
+- $$$+: \mathbb N ^ 2 \rightarrow \mathbb N\space\space$$$
+- $$$0 + b = b\space\space\space(1)\space\space$$$ existuje nula (neutrální prvek)
+- $$$s(a) + b = s(a + b)\space\space\space(2)\space\space$$$ 
+
+***Násobení na $$$\mathbb N$$$***
+
+- $$$\cdot : \mathbb N^2 \rightarrow \mathbb N$$$
+- $$$0 \cdot b = 0;\space\space\space\space c \not = 0 \Rightarrow c + d \not = 0$$$
+- $$$s(a) \cdot b = (a \cdot b) + b;\space\space\space\space c = s(a)$$$
 
 *Pozn.:*
 
-- $$$M^*$$$ ... množina všech konečných posloupností prvků množiny M
-- $$$M^* = \bigcup \limits_{n\in \mathbb N} M ^ n$$$
+- vše odvodíme indukcí (kterou jsou $$$\mathbb N$$$ zadefinována)
 
+### Definice $$$\mathbb Z$$$
 
-*Def.:*
+- zavedu jako množiny všech skupin ekvivalence dvojic $$$(a,b) \in \mathbb N^2$$$ ... $$$(a - b)$$$
 
-- Množina $$$M$$$ se nazývá **spočitatelná**, právě když existuje injekce $$$f: M \rightarrow \mathbb N$$$
+### Definice $$$\mathbb R$$$
 
-*Pozn.:*
+- $$$\mathbb R = \{(A, B) \in (P(\mathbb Q))^2: (\forall a \in A)(\forall b \in B)(a < b) \vee A\cup B = \mathbb Q\} \wedge B \text{ nemá nejvyšší prvek} \wedge A \not = \emptyset \wedge B \not = \emptyset$$$
 
-- spočitatelné jsou např.: $$$\emptyset, \{2, 42, 69\}, \mathbb N, \mathbb Z, \mathbb Q, 2^*, \mathbb N^2 $$$
-
-
-***Důkaz*** $$$f: 2^* \rightarrow \mathbb N$$$
-
-- $$$f(a_n, a_{n-1}, ..., a_1, a_0) = \sum \limits_{i = 0} ^n a_i \cdot 2^{n-1}$$$ tady nastane problém s $$$(0, 0, 0, 1, 0) = (1, 0)$$$
-
-- řešení: $$$f(a_n, a_{n-1}, ..., a_1, a_0) = (\sum \limits_{i = 0} ^n a_i \cdot 2^{n-1}) + 2^n - 1 $$$ a je to bijekce!
-
-***Pozn.:*** -- z předchozího důkazu plyne
-
-- spočetná je každá množina, kterou jde popsat konečnou abecedou
-
-***Existují-li injekce $$$f: A \rightarrow B \wedge g: B\rightarrow A \Leftrightarrow$$$ existuje bijekce $$$ h: A \rightarrow B$$$***
