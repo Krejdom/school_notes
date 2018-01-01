@@ -46,7 +46,6 @@ Diagram případu užítí zachycuje hranice systému.
 * Komunikace probíhá pouze uvnitř systému nebo mezi aktérem a vnitřkem systému, nikoli vně systému.
 
 ### Speciální vztahy
-
 **include** -- funcionalita, která je obsažena ve více případech užití (neduplikujeme ji); A → B = "A obsahuje B"
 
 **extend** -- funcionalita, která je v případu užití volitelná (+ podmínka, kdy může nastat ono rozšíření); A ← B = "A je rozšířeno B"
@@ -68,10 +67,20 @@ Diagram případu užítí zachycuje hranice systému.
 * **plavecká dráha** (swim line) -- rozdělení na různé logické oblasti (např. podle toho, kdo onu část zpracovává)
 * **konec** -- dvojté plné kolečko
 
-... 3. přednáška ...
-
 ## Diagram tříd (Class diagram)
-...
+### Analytický diagram tříd
+
+### Návrhový diagram tříd
+* obsahuje plno implementačních detailů (settery, gettery, datové typy, konstruktory,...)
+* všechny vztahy musí mít šipky a násobnost na obou stranách
+
+**agragace** -- celek a část, část může existovat bez celku, často 0..1* -> N (prázdný kosočtverec)
+
+**kompozice** -- celek a jeho část, část nemůže existovat bez celku, často 1 -> 1 (plný kosočtverec)
+
+**dědičnost** -- implementaci + rozhraní
+
+**rozhraní** -- pouze rozhraní (veřejné atributy, operace a vztahy BEZ implementace)
 
 ## Stavový diagram (State diagram)
 * zachycuje chování určitého objektu (elementu) v systému (jeho životní etapy)
@@ -92,3 +101,26 @@ Diagram případu užítí zachycuje hranice systému.
     * změna (change event)
     * čas (time event)
 * případně je možné použít i větvení podobně jako v diagramu aktivit
+
+## Sekvenční diagram (Sequence diagram)
+### Komponenty
+* aktér
+* objekty
+* fragmenty: opt [], alt
+* cykly: loop, break
+* paralelismus: par
+* zprávy
+    * synchronní -- čekám na odpověď (plná trojúehelníčková šipka)
+    * asynchronní -- nečekám na odpověď (čárková šipka)
+    * return -- nepovinná (čárkovaná šipka doleva)
+* konstruktor <<create>>
+* číslování
+
+## Komunikační diagram (Communication diagram)
+* zanořovaná čísla
+
+## Časový diagram (Timing diagram)
+* časové schéma
+* obsahuje časovou osu
+
+## Interaction overview diagram
