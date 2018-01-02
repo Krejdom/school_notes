@@ -1,22 +1,23 @@
-# Jazyk UML
+# Jazyk UML (Unified Modeling Language)
 * 14 diagramů, každý zachycuje systém z jiné perspektivy
 * **vnější pohled** -- interagce systému z okolím, vhodné pro komunikaci se zákazníkem a ujasnění požadavků
-    * diagram případu užití
+    * Diagram případů užití (Use case diagram)
 * **strukturální pohled** -- vnitřní struktura systému
-    * diagram tříd
-    * diagram objektů
-    * diagram komponent
-    * diagram balíků
-    * diagram nasazení
+    * Diagram tříd (Class diagram)
+    * Diagram objektů (Object diagram)
+    * Diagram komponent (Component diagram)
+    * Diagram balíků (Package diagram)
+    * Diagram nasazení (Deployment diagram)
     * Composite structure diagram
+    * (Profile diaagram)
 * **interakční pohled** -- vnitřní chování systému, jak spolu komunikují jednotlivé částí
-    * sekvenční diagram
-    * komunikační diagram
-    * interakční diagram
-    * timing diagram
+    * Sekvenční diagram (Sequence diagram)
+    * Komunikační diagram (Communiacation diagram)
+    * Diagram přehledu interakcí (Interaction overview diagram)
+    * Diagram časování (Timing diagram)
 * **perspektiva chování** -- posloupnost kroků chování
-    * diagram aktivit
-    * stavový diagram
+    * Diagram aktivit (Activity diagram)
+    * Stavový diagram (State diagram)
 
 ## Diagram případu užití (Use case diagram)
 Diagram případu užítí zachycuje hranice systému.
@@ -103,8 +104,11 @@ Diagram případu užítí zachycuje hranice systému.
 * případně je možné použít i větvení podobně jako v diagramu aktivit
 
 ## Sekvenční diagram (Sequence diagram)
+* zobrazuje interakce uspořádané podle času, zdůrazňuje časovou posloupnost zasílaných zpráv
+
 ### Komponenty
 * aktér
+* čára života
 * objekty
 * fragmenty: opt [], alt
 * cykly: loop, break
@@ -117,10 +121,13 @@ Diagram případu užítí zachycuje hranice systému.
 * číslování
 
 ## Komunikační diagram (Communication diagram)
+* zdůrazňuje strukturu vztahů mezi objekty
 * zanořovaná čísla
+
+## Interaction overview diagram
+* modeluje mezi jednotlivými interakcemi
+* má stejný syntax jako diagram aktivit, jednotlivé interakce jsou komunikační diagramy
 
 ## Časový diagram (Timing diagram)
 * časové schéma
 * obsahuje časovou osu
-
-## Interaction overview diagram
