@@ -14,15 +14,15 @@ _časová složitost problému_ = nejmenší časová složitost, s jakou lze da
 
 ### Deterministická časová složitostní třída problémů
 
-f: \Nat -> \Real+
+f: ℕ -> ℝ+
 
-TIME(f(n)) = {L|L je rozhodovaný nějakým deterministickým jedno- nebo vícepáskovým TM M s časovou složitostí T_M(n) = \O(f(n))}
+TIME(f(n)) = {L|L je rozhodovaný nějakým deterministickým jedno- nebo vícepáskovým TM M s časovou složitostí T_M(n) = O(f(n))}
 
 ### Nedeterministická časová složitostní třída problémů
 
-NTIME(f(n)) = {L|L je rozhodovaný nějakým nedeterministickým jedno- nebo vícepáskovým TM M s časovou složitostí T_M(n) = \O(f(n))}
+NTIME(f(n)) = {L|L je rozhodovaný nějakým nedeterministickým jedno- nebo vícepáskovým TM M s časovou složitostí T_M(n) = O(f(n))}
 
-TIME(f(n)) \subset NTIME(f(n))
+TIME(f(n)) ⊂ NTIME(f(n))
 
 Deterministický TM lze převést na ekvivalentní nedeterministický TM, který bude pracovat v čase O(f^2(n)), pokud původní byl v čase O(f(n))
 
@@ -52,7 +52,7 @@ HAMPATH = {<G,s,t> | G je orientovaný graf obsahující Hamiltonovskou cestu z 
 ### Problém splnitelnosti SAT
 - Rozhodnout, jestli je daná formule ve výrokové logice splnitelná.
 
-SAT = {<\phi> | \phi je splnitelná booleovská formule}
+SAT = {<φ> | φ je splnitelná booleovská formule}
 
 3SAT
 
@@ -62,27 +62,27 @@ SAT = {<\phi> | \phi je splnitelná booleovská formule}
 ### Problém TQBF (Totally Qualified Boolean Formula)
 - Rozhodnout, zda je daná kvantifikovaná formule ve výrokové logice ve výrokové logice bez volných proměnných pravdivá (True).
 
-TBQF = {<\phi> | \phi je pravdivá QBF formule bez volných proměnných}
+TBQF = {<φ> | φ je pravdivá QBF formule bez volných proměnných}
 
-TBQF \in PSPACE \land TQBF je PSPACE těžký \implies TQBF je PSPACE úplný.
+TBQF ∈ PSPACE ∧ TQBF je PSPACE těžký ⇒ TQBF je PSPACE úplný.
 
 ## Těžkost a úplnost problému v dané třídě
 
-Nechť C je složitostní třída splňující P \subset C.
+Nechť C je složitostní třída splňující P ⊂ C.
 
-Jazyk L je _těžký_ ve třídě C (C-těžký), právě když pro každý jazyk L' \in C platí L' \leq_p L.
+Jazyk L je _těžký_ ve třídě C (C-těžký), právě když pro každý jazyk L' ∈ C platí L' ≤_p L.
 
-Jazyk L je _úplný_ ve třídě C (C-úplný), pokud je C-těžký a zároveň L \in C.
+Jazyk L je _úplný_ ve třídě C (C-úplný), pokud je C-těžký a zároveň L ∈ C.
 
 ## Polynomiální redukce
 
-Nechť A \subset \Sigma* a B \subset \Phi* jsou jazyky. Řekněme, že A se polynomiálně redukuje na B, píšeme A \leq_p B, právě když A \leq_m B a redukční funkce je vyčíslitelná Turingovým strojem pracujícím v polynomiálním čase. Funkci f nazveme redukcí A na B v polynomiálním čase.
+Nechť A ⊂ Σ* a B ⊂ Φ* jsou jazyky. Řekněme, že A se polynomiálně redukuje na B, píšeme A ≤_p B, právě když A ≤_m B a redukční funkce je vyčíslitelná Turingovým strojem pracujícím v polynomiálním čase. Funkci f nazveme redukcí A na B v polynomiálním čase.
 
-Nechť A \leq_P B:
-- B \in P \implies A \in P
-- B \in NP \implies A \in NP
-- A \notin P \implies B \notin P
-- A \notin NP \implies B \notin NP
+Nechť A ≤_P B:
+- B ∈ P ⇒ A ∈ P
+- B ∈ NP ⇒ A ∈ NP
+- A ∉ P ⇒ B ∉ P
+- A ∉ NP ⇒ B ∉ NP
 
 ## NP-úplné úlohy
 _problém obchodního cestujícího_ = nalezení nejkratší hamiltnonovské kružnice v grafu

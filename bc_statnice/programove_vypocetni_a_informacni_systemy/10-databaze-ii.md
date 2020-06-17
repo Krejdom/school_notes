@@ -12,13 +12,13 @@
 ## Funkční závislosti
 = hodnota určité množiny atributů jednoznačně určuje hodnotu jiné množiny atributů
 
-R...relační schéma, \alpha \subset R, \beta \subset R : \alpha -> \beta je funkční závislost pokud t_1[\alpha] = t_2[\alpha] \implies t_1[\beta] = \t_2[\beta]
+R...relační schéma, α ⊂ R, β ⊂ R : α -> β je funkční závislost pokud t_1[α] = t_2[α] ⇒ t_1[β] = \t_2[β]
 
-_triviální funkční závislost_ : X \subset Y, Y -> X
+_triviální funkční závislost_ : X ⊂ Y, Y -> X
 
 _superklíč_ relace R je K, pokud K -> R
 
-_kandidátní klíč_ relace R je K, pokud platí K -> R a \alpha \properSubset K, \alpha -> R
+_kandidátní klíč_ relace R je K, pokud platí K -> R a α ⊂ K, α -> R
 
 Funkční závislosti využíváme k testování relace nebo specifikace omezení.
 
@@ -26,11 +26,11 @@ _úplná funkční závislost_ : X -> Y, kde Y není závislé na jiné podmnož
 
 ## Armstrongovy axiomy
 - reflexivita
-    - \beta \subset \alpha -> \alpha -> \beta
+    - β ⊂ α -> α -> β
 - rozšíření
-    - \alpha -> \beta \implies \alpha, \gamma -> \beta, \gamma
+    - α -> β ⇒ α, γ -> β, γ
 - tranzitivita
-    - \alpha -> \beta a \beta -> \gamma \implies \alpha -> \gamma
+    - α -> β a β -> γ ⇒ α -> γ
 
 ## 1. normální forma
 - všechny atributy jsou atomické
@@ -55,17 +55,17 @@ _úplná funkční závislost_ : X -> Y, kde Y není závislé na jiné podmnož
 
 ## Boyce-Coddova normální forma
 - splňuje 1., 2. a 3. normální formu
-- pro každou závislost \alpha -> \beta, \alpha \subset R, \beta \subset R platí alespoň jedno z následujících:
-    - \alpha -> \beta je triviální závislost (\beta \subset \alpha)
-    - \alpha je superklíč
+- pro každou závislost α -> β, α ⊂ R, β ⊂ R platí alespoň jedno z následujících:
+    - α -> β je triviální závislost (β ⊂ α)
+    - α je superklíč
 
 ![](10/IMG_4445.JPG)
 
 ## Vztahy mezi normálními formami
 
-BCNF \properSuperset 3NF \properSuperset 2NF \properSuperset 1NF
+BCNF ⊃ 3NF ⊃ 2NF ⊃ 1NF
 
-třída relací X je vlastní podmnožinou třídy relací Y (X \properSuperset Y . X \neq Y)
+třída relací X je vlastní podmnožinou třídy relací Y (X ⊃ Y . X ≠ Y)
 
 BCNF nemusí na rozdíl od ostatních zachovávat funkční závislosti.
 
@@ -76,11 +76,11 @@ Vždy existuje pevod do 3NF takový, že je bezztrátový a zachová funkční z
 
 ### Bezztrátová dekompozice
 - všechny atributy původních schématu se objeví i v rozkladu.
-- R = R_1 \cup R_2, \Phi_A,B(r) \motylek \Phi_B,C(r)
+- R = R_1 ∪ R_2, Φ_A,B(r) ⋈ Φ_B,C(r)
 
 ### Dekompozice zachovávající funkční závislosti
 - sjednocení všech funkčních závislostí z dekomponovaných schémat dá původní funkční závislosti originálního schématu
-- pokud ne, musíme relace při každé modifikaci spojit \motylek a ověriž platnost závislostí
+- pokud ne, musíme relace při každé modifikaci spojit ⋈ a ověriž platnost závislostí
 
 ## Normalizace
 - proces dekompozice a reorganizace relačního schématu tak, aaby se s ním lépe pracovalo

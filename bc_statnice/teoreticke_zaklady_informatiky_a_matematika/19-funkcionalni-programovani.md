@@ -15,7 +15,7 @@ _funkce_ = předpis, jak ze vstupu vytvořit výstup
 
 _typ funkce- = vymezení objektů, se kterými funkce pracuje a které vrací na výstup, jsou součástí definice
 
-_skládání funkcí_ (f1 \cdot f2) x = f1 (f2 x) ... „f1 po f2“
+_skládání funkcí_ (f1 · f2) x = f1 (f2 x) ... „f1 po f2“
 
 - program ... výraz + definice funkcí
 - výpočet ... úprava výrazu
@@ -89,11 +89,11 @@ Příklad: map (\x -> x * x + 1) [1, 2, 3, 4, 5] -> [2, 5, 10, 17, 26]
 (let f x = x * x + 1 in map f [1, 2, 3, 4, 5] je ekvivalentní)
 
 ### Lambda abstrakce = vytváření lambda funkcí
-1. M \congruent x * x + 1 <- M je tělo funkce
-2. \lambda x.M \congruent \lambda x (x*x + 1) <- z těla vytvoříme funkci
-3. \lambda x.M N \congruent \lambda x(x*x + 1) N = N * N + 1 <- při aplikaci na argument N se všechny návazné výskyty x nahrazí za argument N
+1. M ≡ x * x + 1 <- M je tělo funkce
+2. λ x.M ≡ λ x (x*x + 1) <- z těla vytvoříme funkci
+3. λ x.M N ≡ λ x(x*x + 1) N = N * N + 1 <- při aplikaci na argument N se všechny návazné výskyty x nahrazí za argument N
 
-Příklad: (\labmda x . x * x + 1) 3 = 3 * 3 + 1 = 10
+Příklad: (λ x . x * x + 1) 3 = 3 * 3 + 1 = 10
 
 ## Haskell
 _Zákaldní datové typy:_ Integer, Int, Float, Fractional, Char, String ([Char]), Bool

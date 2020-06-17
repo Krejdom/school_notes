@@ -13,15 +13,15 @@
 _funkce_ = předpis, který každému číslu x z definičního oboru D(f) přiřadí nanejvýš jedno y z oboru hodnot H(f)
 
 ### Monotonnost funkce
-_rostoucí funkce_ = x_1 < x_2 \implies f(x_1) < f(x_2)
+_rostoucí funkce_ = x_1 < x_2 ⇒ f(x_1) < f(x_2)
 
-_klesající funkce_ = x_1 < x_2 \implies f(x_2) < f(x_2)
+_klesající funkce_ = x_1 < x_2 ⇒ f(x_2) < f(x_2)
 
-_neklesající funkce_ = x_1 < x_2 \implies f(x_1) \leq f(x_2)
+_neklesající funkce_ = x_1 < x_2 ⇒ f(x_1) ≤ f(x_2)
 
-_nerostoucí funkce_ = x_1 < x_2 \implies f(x_1) \geq f(x_2)
+_nerostoucí funkce_ = x_1 < x_2 ⇒ f(x_1) ≥ f(x_2)
 
-_konstantní funkce_ = x_1 < x_2 \implies f(x_1) = f(x_2)
+_konstantní funkce_ = x_1 < x_2 ⇒ f(x_1) = f(x_2)
 
 Funkce může klesat, růst, ... pouze na určitém _intervalu_.
 
@@ -30,19 +30,19 @@ _sudá funkce_ = f(x) = f(-x)
 
 _lichá funkce_ = f(x) = -f(-x)
 
-_prostá funkce_ = x_1 \neq x_2 \implies f(x_1) \neq f(x_2) (příma rovnoběžná s osou ji protne právě v jednom bodě)
+_prostá funkce_ = x_1 ≠ x_2 ⇒ f(x_1) ≠ f(x_2) (příma rovnoběžná s osou ji protne právě v jednom bodě)
 
-_inverzní funkce_ = f(x) = y \equiv f^{-1}(y) = x
+_inverzní funkce_ = f(x) = y ≡ f^{-1}(y) = x
 
 ## Vlastnosti reálných funkcí III.
 
-_shora omezená_ = \exists A \in \Real, pro všechny x \in D(f): A > f(x)
+_shora omezená_ = ∃ A ∈ ℝ, pro všechny x ∈ D(f): A > f(x)
 
-_zdola omezená_ = \exists A \in \Real, pro všechna x \in D(f): A < f(x)
+_zdola omezená_ = ∃ A ∈ ℝ, pro všechna x ∈ D(f): A < f(x)
 
-_maximum funkce_ M = pro všechna x \in D(f): f(x) \leq f(M)
+_maximum funkce_ M = pro všechna x ∈ D(f): f(x) ≤ f(M)
 
-_minimum funkce_ M = pro všechna x \in D(f): f(x) \geq f(M)
+_minimum funkce_ M = pro všechna x ∈ D(f): f(x) ≥ f(M)
 
 _globální max/min_ - může jich být víc (může se realizovat pro více hodnot z definičního oboru)
 _ostré max/min_ - je právě jedno
@@ -52,9 +52,9 @@ _periodická funkce_ - např. sin, cos, ...
 ## Polynomy (mnohočleny)
 _polynom_ = výraz sestávající se z součtů, rozdílů, násobků a celočíselných mocnin proměnných
 
-p(x) = \Sigma_{i=0}^n a_i \cdot x^i = a_0 \cdot x^0 + a_1 \cdot x^1 + a_2 \cdot x^2 + ... + a_n \cdot a_n \cdot x^n
+p(x) = Σ_{i=0}^n a_i · x^i = a_0 · x^0 + a_1 · x^1 + a_2 · x^2 + ... + a_n · a_n · x^n
 
-a \in \Real ... koeficient
+a ∈ ℝ ... koeficient
 
 n ... stupeň mnohočlenu
 
@@ -74,7 +74,7 @@ _vozrečky:_
 
 A^2 - B^2 = (A + B)(A - B)
 
-p^{A + B} = p^A \cdot p^B
+p^{A + B} = p^A · p^B
 
 p^{A - B} = p^A \ p^B
 
@@ -83,12 +83,12 @@ p^{A - B} = p^A \ p^B
 ## Limity
 
 ### Limita posloupnosti
-Posloupnost a_n má _vlastní limitu a_, jestliže ke každému \eps > 0 existuje n_0 \in \Nat takové, že pro všechna n > n_0 platí |a_n - a| < \eps.
+Posloupnost a_n má _vlastní limitu a_, jestliže ke každému ϵ > 0 existuje n_0 ∈ ℕ takové, že pro všechna n > n_0 platí |a_n - a| < ϵ.
 
 ### Limita funkce
 Funkce f má v bodě x_0 _vlastní limitu ve vlastním bodě L_, jestliže platí:
 
-(\forall \eps > 0)(\exists \delta > 0)(\forall x \in \Real): (0 < |x - x_0| < \delta \implies |f(x) - L| < \eps)
+( ϵ > 0)(∃ δ > 0)( x ∈ ℝ): (0 < |x - x_0| < δ ⇒ |f(x) - L| < ϵ)
 
 ### Limita zleva a zprava
 Limita v bodě existuje (uvnitř definičního oboru), právě když se limity zprava a zleva rovnají.
@@ -96,12 +96,12 @@ Limita v bodě existuje (uvnitř definičního oboru), právě když se limity z
 ## Spojité funkce
 Funkce f je _spojitá_ v bodě x_0, jestliže je v tomto bodě definovaná a limita funkce v tomto bodě se rovná její funkční hodnotě.
 
-Každý polynom je spojitou funkcí na celém \Real.
+Každý polynom je spojitou funkcí na celém ℝ.
 
 Nechť f a g jsou spojité funkce v bodě x_0.
 
 - f + g je spojitá v bodě x_0
-- f \cdot g je spojitá v bodě x_0
+- f · g je spojitá v bodě x_0
 
 ## Derivace
 = směrnice tečny funkce
@@ -110,7 +110,7 @@ Funkce f má v bodě x_0 derivaci _a_ právě, když existuje limita (vzoreček 
 
 ![](08/IMG_4646.JPG)
 
-Derivace je vlastní (když a \in \Real) / nevlastní (rovna kladnému nebo zápornému nekonečnu) v závislosti na limitě. Derivace zprava a zleva odpovídají limitám zprava/zleva.
+Derivace je vlastní (když a ∈ ℝ) / nevlastní (rovna kladnému nebo zápornému nekonečnu) v závislosti na limitě. Derivace zprava a zleva odpovídají limitám zprava/zleva.
 
 -> Z defivace lze určit, jestli je funkce rostoucí/klesající.
 
@@ -120,8 +120,8 @@ Obrázek výše obsahuje taky některé vzorečky derivací.
 
 _Určení monotonnosti funkce_
 
-- f'(x) > 0 \implies f je rostroucí
-- f'(x) < 0 \implies f je klesající
+- f'(x) > 0 ⇒ f je rostroucí
+- f'(x) < 0 ⇒ f je klesající
 
 _Lokální extrémy_
 
@@ -130,8 +130,8 @@ _Lokální extrémy_
 
 _Konvexnost/konkávnost_
 
-- f''(x) > 0 \implies f je konvexní
-- f''(x) < 0 \implies f je konkávní
+- f''(x) > 0 ⇒ f je konvexní
+- f''(x) < 0 ⇒ f je konkávní
 
 _Inflexní bod_ - druhá derivace neexistuje, nebo je rovna 0
 
@@ -148,7 +148,7 @@ Vzoreček na obrázku:
 Geometricky odpovídá velikosti plochy vymezené grafem funkce a osou x.
 
 ## Diferenciální rovnice
-_diferenciální rovnice primitivního řádku_ = vztah mezi derivací funkce y'(t) v proměnné t, její hodnotou y(t) a samotnou proměnnou. F: \Real^3 -> \Real, F(y', y, t) = 0
+_diferenciální rovnice primitivního řádku_ = vztah mezi derivací funkce y'(t) v proměnné t, její hodnotou y(t) a samotnou proměnnou. F: ℝ^3 -> ℝ, F(y', y, t) = 0
 
 Řešením diferenciální rovnice je funkce nebo třída funkcí.
 

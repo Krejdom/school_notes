@@ -44,14 +44,14 @@ Každý rekurzivní algoritmus lze převést na iterativní.
 - Nahrazení _cyklem_ nebo více vnořenými cykly.
 - Nahrazení _zásobníkem_ (zpravidla u složitějších problémů, kde by byly cykly nepřehledné).
 
-## Merge sort \Theta(n log(n))
-1. Rozděl posloupnost na dvě poloviny. \Theta(n)
-2. Rekurzivně vyřeš obě posloupnosti. 2 \cdot T(n/2)
-3. Kombinuj dvě seřazené posloupnosti do jedné (merge). \Theta(n)
+## Merge sort Θ(n log(n))
+1. Rozděl posloupnost na dvě poloviny. Θ(n)
+2. Rekurzivně vyřeš obě posloupnosti. 2 · T(n/2)
+3. Kombinuj dvě seřazené posloupnosti do jedné (merge). Θ(n)
 
 (posloupnost o jednom prvku je seřazená)
 
-## Quick sort \Theta(n log n) až \Theta(n^2)
+## Quick sort Θ(n log n) až Θ(n^2)
 1. Výběr pivotu.
 2. Rozděl poslounpst na dvě - menší než pivot a větší než pivot.
 3. Rekruzivně vyřeš obě posloupnosti.
@@ -73,6 +73,6 @@ T(n) = složitost rozdělení + T(n_1) + T(n_2) + ... + T(n_k) + složitost komb
 ### Řešení rekurzivních rovnic
 1. Substituční metoda - uhodneme řešení a ověříme pomocí matematické indukce.
 2. Metoda rekurzivního stromu - zkonstruujeme strom, jehož vrcholy vyjadřují složitost jednotlivých rekurzivních volání, složitost = suma ohodnocení vrcholů stromu.
-3. Kuchařková věta (master theorem) - T(n) = aT(n/b) + \Theta(n^c)
+3. Kuchařková věta (master theorem) - T(n) = aT(n/b) + Θ(n^c)
 
 ![](18/IMG_4769.JPG)
