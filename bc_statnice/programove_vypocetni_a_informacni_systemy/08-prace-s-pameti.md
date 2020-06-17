@@ -71,7 +71,7 @@ _vnitřní fragmentace_ = proces nevyužívá celý přidělený prostro
     - private/public
 
 ## Virtualizace paměti
-- paměť, kterou má běžící proces k dispozici, není omezena fyzickou velikostí paměti (LAP \geq FAP)
+- paměť, kterou má běžící proces k dispozici, není omezena fyzickou velikostí paměti (LAP ≥ FAP)
 - implementujeme ji pomocí stránkování na žádost nebo segmentování na žádost
 - ve FAP se mohou nahcázet pouze části programů nutné pro bezprostřední řízení procesů
 - umožňuje udržovat více procesů ve FAP ->  větší pravděpodobnost, že bude nějaký připravený

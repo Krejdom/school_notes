@@ -136,7 +136,7 @@ Umocňujeme základ a redukujeme mocninu pomocí modula
 ! Pokud je základ větší než modul, základ modulem zmodulíme.
 
 ## Prvočíselnost
-_prvočíslo_= číslo p ∈ ℕ, p \geq 2, že pouze 1|p a p|p
+_prvočíslo_= číslo p ∈ ℕ, p ≥ 2, že pouze 1|p a p|p
 
 Prvočísel je nekonečně mnoho.
 

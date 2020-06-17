@@ -44,7 +44,7 @@ _Použití_
 ## Základní operace a jejich složitost
 
 | Struktura                   | insert | remove | search | max | min | next | prev |
-| seřazený jednosměrný seznam | \O(n)  |        | \O(n)  |
+| seřazený jednosměrný seznam | O(n)  |        | O(n)  |
 | neseřazený jednosměrný seznam |
 | seřazený obousměrný seznam |
 | neseřazený obousměrný seznam |

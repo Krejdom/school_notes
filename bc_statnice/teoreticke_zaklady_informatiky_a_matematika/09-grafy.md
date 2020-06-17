@@ -53,12 +53,12 @@ _strom_ = graf bez kružnic, minimální souvislý, maximální acyklický
 _les_ = graf bez kružnic, který nemusí být souvislý
 
 - strom s více než jedním vrcholem obsahuje vrchol stupně 1
-- strom na n vrcholech má n - 1 hran pro n \geq 1
+- strom na n vrcholech má n - 1 hran pro n ≥ 1
 - mezi každými dvěma vrcholy stromu vede právě jedna cesta
 - přidáním právě jedné hrany do stromu vnikne právě jedna kružnice
 
 ## Orientovaný graf
-_orientovaný graf_ = uspořádaná dvojice D = (V, E), kde V je množina vrcholů a E \subset V \times V je množina hran
+_orientovaný graf_ = uspořádaná dvojice D = (V, E), kde V je množina vrcholů a E ⊂ V × V je množina hran
 
 _vstupní stupeň_ vrcholu = počet hran vedoucích do vrcholu
 

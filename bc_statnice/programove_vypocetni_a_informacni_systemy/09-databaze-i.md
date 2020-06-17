@@ -46,7 +46,7 @@ _cizí klíč_ = atribut, který nabývá hodnoty primárního klíče jiné rel
 
 ## Relační algebra: selekce
 
-SELEKCE \sigma_podmínka(relace)
+SELEKCE σ_podmínka(relace)
 
 - vybere n-tice (řádky), pro které je splněna podmínka
 
@@ -56,7 +56,7 @@ Příklad:
 
 ## Relační algebra: projekce
 
-PROJEKCE \Phi_atribut1, atribut2 (relace)
+PROJEKCE Φ_atribut1, atribut2 (relace)
 
 - vybere sloupce odpovídající atributu1, atributu2 z relace. Vrací množinu (bez duplicit).
 
@@ -66,7 +66,7 @@ Příklad:
 
 ## Relační algebra: přejmenování
 
-PŘEJMENOVÁNÍ \ro_noveJmenoRelace(stareJmenoRelace) \ro_\times(A1, A2, ..., AN)(stareJmenoRelace)
+PŘEJMENOVÁNÍ \ro_noveJmenoRelace(stareJmenoRelace) \ro_×(A1, A2, ..., AN)(stareJmenoRelace)
 
 - umožňuje přistupovat k jedné relaci pod více jmény
 - umožní přejmenování atributů
@@ -84,22 +84,22 @@ Příklad:
 ![](09/IMG_4436.JPG)
 
 ## Spojování relací
-- sjednocení \cup
+- sjednocení ∪
     - relační schéma se přebírá z první relace
     - relace musí mít stejný počet atributů a stejnou doménu
 - rozdíl -
     - relace musí mít stejný počet atributů a stejnou doménu
 - přiřazení <-
-    - přidání řádku: r <- r \cup E
+    - přidání řádku: r <- r ∪ E
     - smazání řádku: r <- r - E
-    - aktualizace záznamů r <- \Phi_E1,E2,...,EN(relace)
-- kartézský součin \times
+    - aktualizace záznamů r <- Φ_E1,E2,...,EN(relace)
+- kartézský součin ×
     - relační schéma vznikne slepením 1. a 2. relace
     - pokud mají relace neprázdný průnik, je nutné je nejdříve přejmenovat
-- přirozené vnitřní spojení \motylek
+- přirozené vnitřní spojení ⋈
     - spojení přes stejné hodnoty
     - to, co je stejné se ve výsledku objeví jen jedenkrát
-    - pokud neexistuje společný atribut, chová se jako \times
+    - pokud neexistuje společný atribut, chová se jako ×
 - přirozené vnější spojení
     - rozšíření přirozeného vnitřního spojení, které předchází ztrátě informací
     - chybějící pole zaplní NULL

@@ -17,7 +17,7 @@ _vážená vzdálenost_ mezi dvěma vrcholy v grafu je minimální z cest, kter�
 
 d_G^w(u, v) = min{d_G^w(P) : P je cena cesty z u do v}
 
-_vážená délka_ = d_G^w = \Sigma_{e \in E(P)} w(e) součet ohodnocení hran, které nálež cestě P
+_vážená délka_ = d_G^w = Σ_{e ∈ E(P)} w(e) součet ohodnocení hran, které nálež cestě P
 
 ## Dijkstrův algoritmus
 Hledání nejkratší cesty mezi dvěma vrcholy v kladně váženém grafu (souvislém).
@@ -38,7 +38,7 @@ Hledání nejrakší cesty mezi dvěma vrcholy nebo detekce záporného cyklu.
 3. Bod 2 opakujeme, dokud se nám ve dvou po sobě jdoucích iteracích nezmění žádná vzdálenost.
 
 ## Minimální kostra grafu
-_problém minimální kostry_ (MST) ve váženém souvislém grafu (G, w) hledá kostru T \subset G s nejmenší možnou vahou (přes všechny kostry G)
+_problém minimální kostry_ (MST) ve váženém souvislém grafu (G, w) hledá kostru T ⊂ G s nejmenší možnou vahou (přes všechny kostry G)
 
 _Algoritmy řešící MST:
 
@@ -49,16 +49,16 @@ _Algoritmy řešící MST:
 ### Kruskalův algoritmus
 Hladové hledání minimální kostry grafu.
 
-1. Seřadíme všechny hrany grafu od nejmenší po největší w(e_1) \leq w(e_2) \leq w(e_3)
+1. Seřadíme všechny hrany grafu od nejmenší po největší w(e_1) ≤ w(e_2) ≤ w(e_3)
 2. Inicializujeme prázdnou kostru.
 3. Od nejmenší ohodnocené hray přidáváme hrany do kostry, pokud by přidáním nevznikla kružnice.
 
 ### Jarníkův (Primův) algoritmus
 Hledání minimální kostry grafu (souvislý, vážený).
 
-1. Vybereme libovolný počáteční vrchol a vložíme jej do úschovny U <- {(u, \emptyset)} a do kostry T <- (V(G, \emptyset))
+1. Vybereme libovolný počáteční vrchol a vložíme jej do úschovny U <- {(u, Ø)} a do kostry T <- (V(G, Ø))
 2. Dokud úschovna není prázdná, opakujeme:
-    1. Zvolíme vrchol z úschovny, jehož ohodnocení vzdálenosti je minimální (w(\emptyset) = 0) a odstraníme ho z úschovny.
+    1. Zvolíme vrchol z úschovny, jehož ohodnocení vzdálenosti je minimální (w(Ø) = 0) a odstraníme ho z úschovny.
     2. Přidáme hranu do tohoto vrcholu do kostry.
     3. Pokud z tohoto vrcholu vede kratší cesta do některého vrcholu v úschovně, nahradíme ji.
 
