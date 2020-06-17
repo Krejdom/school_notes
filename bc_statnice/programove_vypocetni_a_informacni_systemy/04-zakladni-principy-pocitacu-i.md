@@ -7,7 +7,7 @@
 ## Číselné soustavy
 - nepoziční - římské číslice, jedničková soustava
 - poziční
-    - polyadická A=a_n \cdot 2^n + ... + a_0 \cdot 2^0
+    - polyadická A=a_n · 2^n + ... + a_0 · 2^0
     - pro záporná čísla pokračujeme s exponenty do záporu
 
 ### Desítková
@@ -71,7 +71,7 @@ U sčítání v inverzním kódu provádíme kruhový přenos - přenos + nejvy�
 
 ## Zobrazení reálných čísel : IEEE754
 
-+- (1 bit) | exponent (8 bitů) | mantisa (23 bitů) -> +- mantisa \cdot 2^exponent
++- (1 bit) | exponent (8 bitů) | mantisa (23 bitů) -> +- mantisa · 2^exponent
 
 ### Tvar mantisy
 - binární číslice nevyššího řádu je vlevo

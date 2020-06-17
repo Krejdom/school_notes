@@ -11,7 +11,7 @@
 ## Binární vyhledávací strom
 = binární strom, ve kterém platí, že klíč každého uzlu je větší nebo roven než všechny klíče v jeho levém podstromě a menší nebo roven všem klíčům v jeho pravém podstromě
 
-Průchody -> \Theta(n)
+Průchody -> Θ(n)
 
 _inorder_: x.left, x, x.right
 
@@ -35,20 +35,20 @@ _předchůdce_ uzlu x je uzel obsahující největší klíč menší než x.key
 
 ## Binární vyhledávací strom: operace
 
-### Vyhledávání \Theta(n)
+### Vyhledávání Θ(n)
 - Rekurzivně postupujeme od kořene a porovnáváme velikost klíče, podle toho se vydáme doprava/doleva.
 
-### Minimální/maximální klíč \Theta(n)
+### Minimální/maximální klíč Θ(n)
 - Postupujeme doleva/doprava, dokud nenarazíme na list.
 
-### Následník uzlu \Theta(n)
+### Následník uzlu Θ(n)
 - Pokud má uzel neprázdný pravý podstrom, je následník minimální prvek tohoto podstromu.
 - Pokud uzel nemá pravý podstrom, procházíme jeho předky, dokud nenarazíme na první uzel do jehož levého podstromu patří náš původní uzel.
 
-### Přidání nového uzlu \Theta(n)
+### Přidání nového uzlu Θ(n)
 - Stejné jako vyhledávání, ale hledáme prázdný podstrom, kam můžeme přidat nový uzel.
 
-### Odstranění uzlu \Theta(n)
+### Odstranění uzlu Θ(n)
 - Pokud uzel nemá syna, odstraníme ho.
 - Pokud má uzel právě jednoho syna, stane se tento syn novým potomkem rodičem původního uzlu.
 - Pokud má uzel dva syny, najdeme následníka (nebo předchůdce) tohoto uzlu a nahradíme ho za původní uzel, viz dále. A levého potomka předáme následníkovi.
@@ -74,30 +74,30 @@ _minimová halda_ = kořen je minimální prvek
 
 ### Binární halda: využití
 - heapsort
-- prioritní fronta \implies Dijkstra, Jarníkův algoritmus
+- prioritní fronta ⇒ Dijkstra, Jarníkův algoritmus
 - hladové algoritmy
 
 ## Binární halda: operace
 
-### Vybudování haldy \O(n)
+### Vybudování haldy o(n)
 - Upraví vstupní haldu tak, aby splňovala vlastnosti haldy (maximové).
 - Přesouvá prvky směrem dolů.
 - Pro každý uzel voláme odspodu metodu HEAPIFY, která opraví vstupní uzel a svoje potomky.
 
-### Heapsort \O(n log(n))
+### Heapsort o(n log(n))
 - Vybudujeme haldu a pak z ní postupně vždy odstraníme největší prvek (přidáme ho do seřazené posloupnosti) a opravíme haldu.
 
-### Nalezení maxima \O(1)
+### Nalezení maxima o(1)
 - Vrátíme kořen strom.
 
-### Odstranění maxima \O(log n)
+### Odstranění maxima o(log n)
 - Pokud pole není prázdné, nahradí meximální prvek posledním prvkem, sníží velikost haldy a zavolá metodu HEAPIFY.
 
-### Increase_key \O(log n)
+### Increase_key o(log n)
 - Navýší hodnotu vybraného prvku, a pak směrem nahoru opraví vlastnosti haldy (porovnává s rodičem).
 
-### Insert \O(log n)
-- Na konec haldy vložíme prvek s hodnotou -\inf. Potom pomocí metody INCREASE_KEY navýšíme jeho hodnotu.
+### Insert o(log n)
+- Na konec haldy vložíme prvek s hodnotou -∞. Potom pomocí metody INCREASE_KEY navýšíme jeho hodnotu.
 
 ## Červeno-černý strom
 = binární vyhledávací strom, který má uzly obarvené černo nebo červenou barvou a splňujeme následující podmínky:
@@ -122,12 +122,12 @@ Každý uzel výšky h má černou výsku alespoň h/2. Červeno-černý strom s
 - funkcionální programování (asociativní pole a množiny)
 
 ## Červeno-černý strom: operace
-- operace SEARCH, MIN, MAX, SUCCESOR a PREDECESSOR se implementují stejně \O(log n) jako u binárních vyhledávacích stromů.
+- operace SEARCH, MIN, MAX, SUCCESOR a PREDECESSOR se implementují stejně o(log n) jako u binárních vyhledávacích stromů.
 - INSERT a DELETE mohou porušit vlastnosti, k obnově vlastností využíváme _rotace_.
 
 ![](17/IMG_4754.JPG)
 
-### INSERT \O(log n)
+### INSERT o(log n)
 - Uzel vložíme stejně jako do binárního vyhledávacího strom.
 - Uzel obarvíme červeně.
 - Opravíme strom.
@@ -150,7 +150,7 @@ _minimální stupeň stromu t_ - každý uzel (kromě kořene) musí obsahovat a
 
 _plný uzel_ = obsahuje alespoň 2t následníků
 
-B-strom s n \geq 1 klíči a minimálním stupněm t \geq 2 má _hloubku_ nejvýše h \leq log_t ((N+1)/2)
+B-strom s n ≥ 1 klíči a minimálním stupněm t ≥ 2 má _hloubku_ nejvýše h ≤ log_t ((N+1)/2)
 
 ## B-strom: implementace
 - Uzel má atribudy: _počet vložených klíčů_, _klíče_ v neklesajícím pořadí, informaci o tom, jestli je _list_, nebo není.
@@ -163,18 +163,18 @@ B-strom s n \geq 1 klíči a minimálním stupněm t \geq 2 má _hloubku_ nejvý
 
 ## B-strom: operace
 
-### Vyhledávání \O(t log_t n)
+### Vyhledávání o(t log_t n)
 - Analogicky jako v binárním vyhledávacím stromě. Při výběru potomka využíváme intervaly.
 
-### Vytvoření prázdného stromu \O(1)
+### Vytvoření prázdného stromu o(1)
 
-### Přidání klíče \O(t log_t n)
+### Přidání klíče o(t log_t n)
 - Klíč vložíme do exisujícího listu.
 - Pokud přeplníme list, rozdělíme ho na dva.
 - Pokud přeplníme počet potomků rodiče, rozdělíme i rodiče.
 - Optimalizace počtu přístupů na disk: při průchodu preventivně rozdělujeme plné uzly.
 
-### Odstranění klíče \O(t log_t n)
+### Odstranění klíče o(t log_t n)
 - Mazání klíče probíhá vždy v listu, takže nejdříve nahradíme klíč, který není v listu, za jeho následníka, přesuneme ho do listu a až pak ho smažeme.
 - Optimalizace: při průchodu zvětšujeme počet klíčů v uzlech na t.
 

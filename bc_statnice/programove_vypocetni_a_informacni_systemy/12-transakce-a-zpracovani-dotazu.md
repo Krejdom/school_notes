@@ -56,7 +56,7 @@ Plán je pohledově serializovatelný pokud je pohledově ekvivalentní sériov�
 - vrchol = transakce
 - hrana z T1 do T2 = konflikt transakcí T1 a T2, přičemž T1 přistupuje k datům způsobující konflikt dříve
 
-Plán je konfliktně serializovatelný, pokud je precedenční graf acyklicyý (\O(n^2)).
+Plán je konfliktně serializovatelný, pokud je precedenční graf acyklicyý (o(n^2)).
 
 Sériové pořadí získáme topologickým uspořádání.
 

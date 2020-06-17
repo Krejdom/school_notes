@@ -2,7 +2,7 @@
 - parciální a totální korektnost
 - důkazy korektnosti
 - asymptotická složitost
-- \O-notace
+- o-notace
 - zdůvodnění korektnosti a složitosti základních algoritmů
     - řadicí algoritmy
     - binární vyhledávání
@@ -14,7 +14,7 @@ _výstupní podmínka_ - pro každý vstup daného algoritmu splňující vstupn
 
 _invariant cyklu_ - tvrzení o algoritmu, které platí před a po vykonání každé iterace cyklu
 
-Přesněji: {I} while P do {P \land I} XXX {P \land I} od / {\neg P \land I}
+Přesněji: {I} while P do {P ∧ I} XXX {P ∧ I} od / {¬ P ∧ I}
 
 ## Korektnost II.
 Algoritmus je _parciálně korektní_, pokud pro každý vstup, který splňuje vstupní podmínku a algoritmus na něm skončí, výstup splňuje výstupní podmínku.
@@ -47,43 +47,43 @@ _Délka výpočtu_ konkrétního algoritmu na konkrétním vstupu odpovídá po�
 _Časová složistost algoritmU_ je funkce f na množině přirozených čísel taková, že výpočet algoritmu pro každý vstup délky n má délku nejvýše f(n). Obvykle vyjadřujeme asymptoticky.
 
 ## Asymptotická notace
-\O(g) = {f | \exists c > 0, n_0 \in \nat : \forall n \geq n_0 : f(n) \leq f(n) \leq c \cdot g(n)}
+o(g) = {f | ∃ c > 0, n_0 ∈ ℕ :  n ≥ n_0 : f(n) ≤ f(n) ≤ c · g(n)}
 
 = množina funkcí rostoucích stejně rychle jako g, nebo pomaleji
 
-\Omega(g) = {f | \exists c > 0, n_0 \in \nat : \forall n \geq n_0 : c \cdot g(n) \leq f(n)}
+Ω(g) = {f | ∃ c > 0, n_0 ∈ ℕ :  n ≥ n_0 : c · g(n) ≤ f(n)}
 
 = množina funkcí rostoucích stejně rychle jako g, nebo rychleji
 
-\Theta(g) = \O(g) \cup \Omega(g)
+Θ(g) = o(g) ∪ Ω(g)
 
 = množina funkcí rostoucích stejně rychle jako g
 
 ### Vlastnosti
-- _tranzitivita_ = f(n) \in \Theta(g(n)) a g(n) \in \Theta(h(n)) \implies f(n) \in \Theta(h(n)) (stejně pro \O, \Omega)
-- _reflexivita_ f(n) \in \theta(f(n)) (stejně pro \O, \Omega)
-- _symetrie_ f(n) \in \Theta(g(n)) \equiv g(n) \in \Theta(f(n))
-- _transpozice_ f(n) \in O(g(n)) \equiv g(n) \in \Omega(f(n))
+- _tranzitivita_ = f(n) ∈ Θ(g(n)) a g(n) ∈ Θ(h(n)) ⇒ f(n) ∈ Θ(h(n)) (stejně pro o, Ω)
+- _reflexivita_ f(n) ∈ θ(f(n)) (stejně pro o, Ω)
+- _symetrie_ f(n) ∈ Θ(g(n)) ≡ g(n) ∈ Θ(f(n))
+- _transpozice_ f(n) ∈ O(g(n)) ≡ g(n) ∈ Ω(f(n))
 
 ## Binární vyhledávání: korektnost
 _Invariant_: na začátku každé iterace platí, že jestli se x nalézá v S, tak se nalézá mezi pozicemi f (first) a l (last).
 
 - Inicializace: Na začátku je i = floor((f + l)/2), takže tvrzení platí.
-- Iterace: Pokud x \neq S[i] a x < S[i], nachází se x mezi pozicemi f a i. Pokud x > S[i], mezi i a l. Pokud je vrácena hodnota i, invariant také platí.
-- Ukončení: Cyklus končí buď protože S[i] = x, nebo protože f = l \neq x.
+- Iterace: Pokud x ≠ S[i] a x < S[i], nachází se x mezi pozicemi f a i. Pokud x > S[i], mezi i a l. Pokud je vrácena hodnota i, invariant také platí.
+- Ukončení: Cyklus končí buď protože S[i] = x, nebo protože f = l ≠ x.
 
-Složitost: \O(log_2 n)
+Složitost: o(log_2 n)
 
 ## Řadicí algoritmy
 
-Bubble sort | \Theta(n^2) | invariant:  a[n-i-1:] ve finální pozici
-Insert sort | \Theta(n^2) |
-Merge sort | \Theta(n \cdot log_2 n) |
-Quick sort | \Theta(n^2) | očekávaná složitost \Theta(n \cdot log_2 n)
-Heap sort | \Theta(n \cdot log_2 n) |
-Counting sort | \Theta(n + k) | (hodnoty z intervalu 0..k)
-Radix sort | \Theta(d(n+k)) | čísla z d číslic, číslicové řazení \Theta(n)
-Bucket sort | \Theta(n) + \Sum_{n = 0}^{n-1} \O(n_i^2)
+Bubble sort | Θ(n^2) | invariant:  a[n-i-1:] ve finální pozici
+Insert sort | Θ(n^2) |
+Merge sort | Θ(n · log_2 n) |
+Quick sort | Θ(n^2) | očekávaná složitost Θ(n · log_2 n)
+Heap sort | Θ(n · log_2 n) |
+Counting sort | Θ(n + k) | (hodnoty z intervalu 0..k)
+Radix sort | Θ(d(n+k)) | čísla z d číslic, číslicové řazení Θ(n)
+Bucket sort | Θ(n) + ∑_{n = 0}^{n-1} o(n_i^2)
 
 
 

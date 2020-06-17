@@ -18,13 +18,13 @@ u + v = (a_1, ..., a_n) + (b_1, ..., b_2) = (a_1 + b_1, ..., a_n + b_n)
 c ∙ u = c ∙ (a_1, ..., a_n) = (c ∙ a_1, ..., c ∙ a_n)
 
 ### Matice
-_matice_ typu m|n nad skaláry 𝕂 je obdélníkové schéma A s m řádky a n sloupci, kde a_ij ∈ 𝕂 pro všechna 1 \leq i \leq m a 1 \leq j \leq n.
+_matice_ typu m|n nad skaláry 𝕂 je obdélníkové schéma A s m řádky a n sloupci, kde a_ij ∈ 𝕂 pro všechna 1 ≤ i ≤ m a 1 ≤ j ≤ n.
 
-Vektroy (a_i1, a_i2, ..., a_in) \in \Field^n, i \leq m jsou i-té _řádky_ A.
+Vektroy (a_i1, a_i2, ..., a_in) ∈ 𝕂^n, i ≤ m jsou i-té _řádky_ A.
 
-Vektory (a_1j, a_2j, ..., a_mj) \in \Field^m, j \leq n jsou j-té _sloupce A.
+Vektory (a_1j, a_2j, ..., a_mj) ∈ 𝕂^m, j ≤ n jsou j-té _sloupce A.
 
-Matice je zobrazení A : {1, ..., m} \kart {1, ..., n} -> \Field
+Matice je zobrazení A : {1, ..., m} ⨯ {1, ..., n} -> 𝕂
 
 ## Speciální druhy matic
 _nulová matice_ = obsahuje samé nuly
@@ -70,7 +70,7 @@ _existence neutrálního prvku_ a + 0 = a
 _existence inverzního prvku_ a + (-a) = 0
 
 _distributivita_ sčítání vůči násobení
-a \cdot (b + c) = (a \cdot b) + (a \cdot c)
+a · (b + c) = (a · b) + (a · c)
 
 ## Skalární součin
 Vztah velikostí vektorů a jejich úhlů.
@@ -81,10 +81,10 @@ u = (u_1, u_2)
 
 v = (v_1, v_2)
 
-u \cdot v = (u_1 \cdot v_1) + (u_2 \cdot v_2)
+u · v = (u_1 · v_1) + (u_2 · v_2)
 
 ### Velikost úhlu
-u \cdot v = |u| \cdot |v| \cdot cos \alpha
+u · v = |u| · |v| · cos α
 
 Pokud je skalární součin roven 0, svírají vektory pravý úhel.
 
@@ -110,9 +110,9 @@ Aplikací elementárních řádkových operací dostáváme matici do schodovit�
 ## Determinant
 Zobrazení, které přiřadí čtvercové matici A skalár |A|
 
-|A| = \Sigma_{\sigma \in \Sigma_n} sgn(\sigma) \cdot a_{1\sigma(1)} \cdot ... \cdot a_{n\sigma(n)}
+|A| = Σ_{σ ∈ Σ_n} sgn(σ) · a_{1σ(1)} · ... · a_{nσ(n)}
 
-\Sigma_n je množina všech permutací na {1, ..., n}.
+Σ_n je množina všech permutací na {1, ..., n}.
 
 Geometrický význam je, že determinant je objem báze vektorů.
 
@@ -128,7 +128,7 @@ Geometrický význam je, že determinant je objem báze vektorů.
 ### Laplaceúv rozvoj pro výpočet determinantu
 Vybereme z matice řádek nebo sloupec, který obsahuje nejvíc nul a pro nenulové prvky vypočítáme jejich minory (determinanty matice, který neobsahuje řádek a sloupec vybraného prvku).
 
-|A| = \Signum_{j=1}^n (-1)^{i+j} \cdot a_ij \cdot M_ij^A
+|A| = Signum_{j=1}^n (-1)^{i+j} · a_ij · M_ij^A
 
 Příkald:
 

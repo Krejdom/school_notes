@@ -10,9 +10,9 @@
 ## Formální jazyky
 _abeceda_ = libovolná konečná množina znaků
 
-_slovo_ nad abecedou \Sigma je libovolná konečná posloupnost znaků této abecedy
+_slovo_ nad abecedou Σ je libovolná konečná posloupnost znaků této abecedy
 
-_jazyk_ nad abecedou \Sigma je libovolná konečná množina slov nad \Sigma
+_jazyk_ nad abecedou Σ je libovolná konečná množina slov nad Σ
 
 _gramatika_ G je popis jazyka pomocí pravidel, podle kterých se vytvářejí slova daného jazyka
 
@@ -21,14 +21,14 @@ _gramatika_ G je popis jazyka pomocí pravidel, podle kterých se vytvářejí s
 - frázové gramatiky
     - bez omezení pravidel
 - kontextové gramatiky
-    - pro každé pravidlo \alpha -> \beta platí |\alpha| \leq |\beta|
-    - výjimka: S -> \eps, pokud S není v pravé straně žádného pravidla
-- bezkontextové gramatiky (bez \eps-pravidel)
-    - pravidla tvaru A -> \alpha, kde |\alpha| \geq 1
-    - výjimka: S -> \eps, pokud S není v pravé straně žádného pravidla
+    - pro každé pravidlo α -> β platí |α| ≤ |β|
+    - výjimka: S -> ϵ, pokud S není v pravé straně žádného pravidla
+- bezkontextové gramatiky (bez ϵ-pravidel)
+    - pravidla tvaru A -> α, kde |α| ≥ 1
+    - výjimka: S -> ϵ, pokud S není v pravé straně žádného pravidla
 - regulární gramatiky
     - pravidla tvaru A -> aB nebo A -> a
-    - výjimka: S -> \eps, pokud S není v pravé straně žádného pravidla
+    - výjimka: S -> ϵ, pokud S není v pravé straně žádného pravidla
 
 ## Chomského hierarchie formálních jazyků
 
@@ -56,44 +56,44 @@ Tyto jazyky jsou v inkluzi, navíc existuje třída regulárních jazyků, kter�
 ![](11/IMG_4673.JPG)
 
 ## Gramatika
-G = (N, \Sigma, P, S)
+G = (N, Σ, P, S)
 
 N ... neprázdná konečná množina _neterminálů_
 
-\Sigma ... konečná množina _terminálů: (N \cup \Sigma = \emptyset)
+Σ ... konečná množina _terminálů: (N ∪ Σ = Ø)
 
 P ... konečná množina _pravidel_
 
-P \subset V*.N.V* \times V* V = N \cap \Sigma
+P ⊂ V*.N.V* × V* V = N ∩ Σ
 
-S \in N ... _počáteční neterminál_
+S ∈ N ... _počáteční neterminál_
 
 ## Konečný automat (deterministický)
 
-A = (Q, \Sigma, \delta, q_0, F)
+A = (Q, Σ, δ, q_0, F)
 
 Q ... neprázdná konečná množina _stavů_
 
-\Sigma ... konečná _vstupní abeceda_
+Σ ... konečná _vstupní abeceda_
 
-\delta : Q \times \Sigma -> Q ... parciální _přechodová funkce_
+δ : Q × Σ -> Q ... parciální _přechodová funkce_
 
-q_0 \in Q ... _iniciální stav_
+q_0 ∈ Q ... _iniciální stav_
 
-F \subset Q ... množina _akceptujících stavů_
+F ⊂ Q ... množina _akceptujících stavů_
 
 ## Výpočet konečného automat
-_rozšířená přechodová funkce_ \delta^ : Q \times \Sigma* -> Q
+_rozšířená přechodová funkce_ δ^ : Q × Σ* -> Q
 
-\delta^(q, \eps) = q pro každý stav q \in Q
+δ^(q, ϵ) = q pro každý stav q ∈ Q
 
-\delta^(q, wa) = \delta(\delta^(q, w), a) je-li \delta^(q, w) i \delta(\delta^(q, w), a) definováno, \bot jinak.
+δ^(q, wa) = δ(δ^(q, w), a) je-li δ^(q, w) i δ(δ^(q, w), a) definováno, ⊥ jinak.
 
-Slovo w je _akceptováno_ automatem A, právě když \delta^(q_0, w) \in F.
+Slovo w je _akceptováno_ automatem A, právě když δ^(q_0, w) ∈ F.
 
-Slovo w je _zamítáno_ automatem A, právě když \delta^(q_0, w) \notin F.
+Slovo w je _zamítáno_ automatem A, právě když δ^(q_0, w) ∉ F.
 
-_Jazyk přijímaný automatem A_ je L(A) = {w \in \Sigma* | \delta^(q_0, w) \in F}
+_Jazyk přijímaný automatem A_ je L(A) = {w ∈ Σ* | δ^(q_0, w) ∈ F}
 
 Automaty jsou _ekvivalentní_, pokud přijímají stejný jazyk.
 
@@ -115,23 +115,23 @@ U automatů v kanonickém tvaru můžeme snadno srovnávat, jestli jsou stejné.
 
 ## Nedeterministický konečný automat
 
-A = (Q, \Sigma, \delta, q_0, F)
+A = (Q, Σ, δ, q_0, F)
 
 Q ... neprázdná konečná množina _stavů_
 
-\Sigma ... konečná _vstupní abeceda_
+Σ ... konečná _vstupní abeceda_
 
-\delta : Q \times \Sigma -> 2^Q ... totální _přechodová funkce_
+δ : Q × Σ -> 2^Q ... totální _přechodová funkce_
 
-q_0 \in Q ... _iniciální stav_
+q_0 ∈ Q ... _iniciální stav_
 
-F \subset Q ... množina _akceptujících stavů_
+F ⊂ Q ... množina _akceptujících stavů_
 
-### Rozšířená přechodová funkce \delta^ : Q \times \Sigma* -> 2^Q
+### Rozšířená přechodová funkce δ^ : Q × Σ* -> 2^Q
 
-\delta^(q, \eps) = {q}
+δ^(q, ϵ) = {q}
 
-\delta^(q, wa) = \cup_{p \in \delta&(q, w)} \delta(p, a)
+δ^(q, wa) = ∪_{p ∈ δ&(q, w)} δ(p, a)
 
 ## Převod NFA na DFA
 
@@ -143,40 +143,40 @@ DFA může být ve výsledku až exponenciálně větší.
 
 ## Regulární výrazy
 
-_Definice množiny regulárních výrazů nad abecedou \Sigma. RE je:
+_Definice množiny regulárních výrazů nad abecedou Σ. RE je:
 
-- \eps, \emptyset a a pro každé a \in \Sigma
+- ϵ, Ø a a pro každé a ∈ Σ
 - (E.F), (E+F), (E)*, pokud E a F jsou RE
 - každý RE vnikne konečným počtem aplikací prvních dvou pravidel
 
-Každý RE E nad abecedou \Sigma popisuje jazyk L(E) nad stejnou abecedou:
+Každý RE E nad abecedou Σ popisuje jazyk L(E) nad stejnou abecedou:
 
-L(\eps) = {\eps}
-L(\emptyset) = \emptyset
-L(a) = {a} pro každé a \in \Sigma
+L(ϵ) = {ϵ}
+L(Ø) = Ø
+L(a) = {a} pro každé a ∈ Σ
 L(E.F) = L(E).L(F)
-L(E+F) = L(E) \cup L(F)
+L(E+F) = L(E) ∪ L(F)
 L(E*) = L(E)*
 
 ## Regulární přechodový graf
 
-A = (Q, \Sigma, \delta, q_0, F)
+A = (Q, Σ, δ, q_0, F)
 
 Q ... neprázdná konečná množina _stavů_
 
-\Sigma ... konečná _vstupní abeceda_
+Σ ... konečná _vstupní abeceda_
 
-\delta : Q \times Q -> RE(\Sigma) ... parciální _přechodová funkce_
+δ : Q × Q -> RE(Σ) ... parciální _přechodová funkce_
 
-I \subset Q ... množina _iniciálních stavů_
+I ⊂ Q ... množina _iniciálních stavů_
 
-F \subset Q ... množina _akceptujících stavů_
+F ⊂ Q ... množina _akceptujících stavů_
 
 ## Převod regulárního přechodového grafu na NFA
 
 1. vytvoříme nový iniciální stav
 2. Opakovaně realizujeme následující kroky:
-    1. Ostraníme hrany ohodnocené symbolem \emptyset
+    1. Ostraníme hrany ohodnocené symbolem Ø
     2. Nahradíme hrany podle následujících pravidel:
 
 ![](11/IMG_4687.JPG)
