@@ -119,7 +119,7 @@ Příklad:
 
 a) Eulerova věta
 
-Pokud (a, n) = 1, pak a^φ(m) ≡ 1 (mod m)
+Pokud (a, m) = 1, pak a^φ(m) ≡ 1 (mod m)
 
 b) Rozklad modula na dvě nesoudělná čísla
 
@@ -136,7 +136,7 @@ Umocňujeme základ a redukujeme mocninu pomocí modula
 ! Pokud je základ větší než modul, základ modulem zmodulíme.
 
 ## Prvočíselnost
-_prvočíslo_= číslo p ∈ ℕ, p > 2, že pouze 1|p a p|p
+_prvočíslo_= číslo p ∈ ℕ, p \geq 2, že pouze 1|p a p|p
 
 Prvočísel je nekonečně mnoho.
 
@@ -148,10 +148,10 @@ _složené číslo_ = číslo, které není prvočíslem.
 
 - postupné dělení (stačí ověřit jen čísla do √n)
 - Eratosthenovo síto
-- Fermanův test: pro každé prvočílo p platí, že a^(p - 1) ≡ 1 (mod p) pro každé a takové, že 0 < a < p, existují ale i neprvočísla, pro které vztah platí
-- Wilsonova věta: číslo p je prvočíslo, právě když platí (p - 1)! ≡ -1 (mod p)¨
+- Fermanův test: pro každé prvočíslo p platí, že a^(p - 1) ≡ 1 (mod p) pro každé a takové, že 0 < a < p, existují ale i neprvočísla, pro které vztah platí
+- Wilsonova věta: číslo p je prvočíslo, právě když platí (p - 1)! ≡ -1 (mod p)
 
-## RSA (Rivest, Shamir Adleman)
+## RSA (Rivest, Shamir, Adleman)
 Asymetrická šifra (soukromý i veřejný klíč), která se používá pro šifrování i podepisování dokumentů.
 
 p, q ... prvočísla; n = p ∙ q; φ(n) = (p - 1)(q - 1)
@@ -219,10 +219,10 @@ Každý polynomiální (n,k)-kód je lineární kód.
 
 _matice kontroly parity_ H
 
-_syndrom slova u je hodnota H∙u, podle syndromu zjistím, kolik chyb nastalo.
+_syndrom_ slova u je hodnota H∙u, podle syndromu zjistím, kolik chyb nastalo.
 
 ## Polynomiální kódy
-Nechť p(x) = a_0 + ... + a_(n-k) ∙ x^(n-k) ∈ ℤ_2[x] je polynom s a_0 = 1, a_(n-k) = 1. Polynomiální kód generovaný polynomem p(x) je (n, k)-kód, jehož slova jseu polynomy stupně menšího než n dělitelné p(x).
+Nechť p(x) = a_0 + ... + a_(n-k) ∙ x^(n-k) ∈ ℤ_2[x] je polynom s a_0 = 1, a_(n-k) = 1. Polynomiální kód generovaný polynomem p(x) je (n, k)-kód, jehož slova jsou polynomy stupně menšího než n dělitelné p(x).
 
 Zpráva m(x) je zakódována jako v(x) = r(x) + x^(n-k) m(x), kde r(x) je zbytek po dělení polynomu x^(n-k)m(x) polynomem p(x).
 
