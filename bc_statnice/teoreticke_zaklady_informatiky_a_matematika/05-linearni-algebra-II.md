@@ -10,16 +10,16 @@
 
 ## Vlastní čísla a vektory
 
-Skaláry \lambda vyhovující rovnici \phi(u) = \lambda \cdot u pro nenulový vektor u \in V nazýváme _vlastní čísla_, zobrazení \phi přílušné vekteoru u pak _vlastní vektory_ zobrazení \phi.
+Skaláry λ vyhovující rovnici φ(u) = λ · u pro nenulový vektor u ∈ V nazýváme _vlastní čísla_, zobrazení φ přílušné vekteoru u pak _vlastní vektory_ zobrazení φ.
 
-|A - \lambda \cdot E| = 0
+|A - λ · E| = 0
 
 Příklad:
 
 ![](05/IMG_4606.JPG)
 
 ### Charakteristický polynom
-Pro matici A dimenze n nad \Field nazýváme polynom |A - \lambda \cdot E| \in \Field_n[\lambda] _charakteristický polynom_ matice A. Kořeny tohoto polynomu jsou vlastní čísla matice.
+Pro matici A dimenze n nad 𝕂 nazýváme polynom |A - λ · E| ∈ 𝕂_n[λ] _charakteristický polynom_ matice A. Kořeny tohoto polynomu jsou vlastní čísla matice.
 
 Příklad:
 
@@ -28,7 +28,7 @@ Příklad:
 ### Výpočet vlastního vektoru
 Vlastní vektor je výsledkem řešení soustavy lineárních rovnic, kterou získám dosazením příslušného vlastního čísla do rovnice.
 
-A - \lambda \cdot E = O (vector)
+A - λ · E = O (vector)
 
 Příklad:
 
@@ -40,9 +40,9 @@ _Vlastní vektor_ je vektor, jehož směr se po aplikaci transformace(matice) A 
 ## Inverzní matice
 Matice B^{-1} je inverzní k matici B, když
 
-B \cdot B^{-1} = B^{-1} \cdot B = E
+B · B^{-1} = B^{-1} · B = E
 
-(A \cdot B)^{-1} = A^{-1} \cdot B^{-1}
+(A · B)^{-1} = A^{-1} · B^{-1}
 
 ### Výpočet inverzní matice
 Z regulární matice (čtvercové, bez lineárně závislých řádků).
@@ -58,14 +58,14 @@ Z regulární matice (čtvercové, bez lineárně závislých řádků).
 - násobení vektorů číslem (asociativní, distributivní vzhledem k sčítání vektorů, distributivní vzhledem k sčítání čísel, má nulový prvek)
 
 ## Vektorové podprostory
-Vlastní vektory příslušející stejnému vlastnímu číslu tvoří (společně s nulovým vektorem) podprostor vektorového prostoru \Field^n.
+Vlastní vektory příslušející stejnému vlastnímu číslu tvoří (společně s nulovým vektorem) podprostor vektorového prostoru 𝕂^n.
 
 Podprostor určitého vlastního čísla získáme vyjádřením vlastního vektoru pomocí reálných koeficientů.
 
 Vlastní vektory příslušející různým vlastním číslům jsou _lineárně nezávislé_, tedy že žádný z vektrů nemůžeme vyjádřit jako lineární kombinaci ostatních vektorů (součet násobků).
 
 ## Vektorová báze
-Podmnožina M \subset V se nazývá _báze_ vektorového prostoru V, jestliže <M> (podprostor vyjádřený s koeficienty) = V a M je lineárně nezávislá.
+Podmnožina M ⊂ V se nazývá _báze_ vektorového prostoru V, jestliže <M> (podprostor vyjádřený s koeficienty) = V a M je lineárně nezávislá.
 
 _Konečně rozměrný vektorový prostor_ má konečnou bázi.
 
@@ -80,12 +80,12 @@ Funkce + má nulový prvek, je asociativní a pro každé dva body a, b existuje
 
 Jinak řečeno (Dominičina verze):
 
-Buď V = \Real^n vektorový prostor. Standardní _afinní prostor_ A_n = \Real^n je _množina_ všech _bodů v \Real^n_ spolu s _operací_, která bodu A = (a_1, ..., a_n) a vektoru v = (v_1, ..., v_n) \in V (zaměření afinního prostoru) přiřadí bod A + v = (a_1 + v_1, ..., a_n + v_n) \in A_n
+Buď V = ℝ^n vektorový prostor. Standardní _afinní prostor_ A_n = ℝ^n je _množina_ všech _bodů v ℝ^n_ spolu s _operací_, která bodu A = (a_1, ..., a_n) a vektoru v = (v_1, ..., v_n) ∈ V (zaměření afinního prostoru) přiřadí bod A + v = (a_1 + v_1, ..., a_n + v_n) ∈ A_n
 
 Operace splňuje následující vlastnosti:
-- A + 0 = A pro všechna A \in A_n a nulový vektor 0 \in V
-- A + (v + w) = (A + v) + w pro všechny vektory v, w \in V a body A \in A_n
-- pro každé dva body A, B \in A_n existuje právě jeden vektor AB \in V takový, že A + AB = B
+- A + 0 = A pro všechna A ∈ A_n a nulový vektor 0 ∈ V
+- A + (v + w) = (A + v) + w pro všechny vektory v, w ∈ V a body A ∈ A_n
+- pro každé dva body A, B ∈ A_n existuje právě jeden vektor AB ∈ V takový, že A + AB = B
 
 ## Euklidovský prostor
 Afinní prostor se skalárním součinem.
