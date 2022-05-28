@@ -17,7 +17,7 @@ _Abeceda výrokové logiky:_
 
 - spočetně mnoho znaků pro výrokové proměnné: x_1, x_2, x_3, ...
 - logické spojky: ¬, ∧, ∨, ⇒, ⇔
-- zárovky: ()
+- závorky: ()
 
 _Formule ve výrokové logice:_
 
