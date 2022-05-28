@@ -26,7 +26,7 @@ _Formule ve výrokové logice:_
 - konjunkce, disjunkce, implikace a ekvivalence formulí
 
 ## Výroková logika: sémantika
-_interpretace (pravdivostní ohodnocení)_ = zobrazení, které každé výrokové proměnné přiradí hodnotu _pravda_ (1), nebo _nepravda_ (0)
+_interpretace (pravdivostní ohodnocení)_ = zobrazení, které každé výrokové proměnné přiřadí hodnotu _pravda_ (1), nebo _nepravda_ (0)
 
 _valuace_ je funkce přiřazující formuli hodnotu 0, nebo jedna na základě její interpretace
 
