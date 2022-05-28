@@ -31,7 +31,6 @@ _datová strukutra_ = implementace složeného datového typu
 - dříve implementace pomocí červeno-černých stromů
 - dnes díky větším kapacitám paměti implementace pomocí hašovacích tabulek
 
-
 _Použití_
 - testování, jestli se zadaná hodnota nachází v určité množině dat
 
@@ -43,11 +42,12 @@ _Použití_
 
 ## Základní operace a jejich složitost
 
-| Struktura                   | insert | remove | search | max | min | next | prev |
-| seřazený jednosměrný seznam | O(n)  |        | O(n)  |
-| neseřazený jednosměrný seznam |
-| seřazený obousměrný seznam |
-| neseřazený obousměrný seznam |
-| množina |
-| zásobník |
-| fronta |
+| Struktura                     | insert | remove | search | max | min | next | prev |
+|-------------------------------|--------|--------|--------|-----|-----|------|------|
+| seřazený jednosměrný seznam   | O(n)   |        | O(n)   |     |     |      |      |
+| neseřazený jednosměrný seznam |        |        |        |     |     |      |      |
+| seřazený obousměrný seznam    |        |        |        |     |     |      |      |
+| neseřazený obousměrný seznam  |        |        |        |     |     |      |      |
+| množina                       |        |        |        |     |     |      |      |
+| zásobník                      |        |        |        |     |     |      |      |
+| fronta                        |        |        |        |     |     |      |      |
