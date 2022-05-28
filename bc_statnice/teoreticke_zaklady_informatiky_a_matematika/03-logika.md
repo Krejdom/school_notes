@@ -100,7 +100,7 @@ _existenční kvantifikátor ∃_ = zobecnění disjunkce pro nekonečné domén
 ## Pravdivost, splnitelnost, dokazatelnost
 Formule φ je _pravdivá při valuaci_ v, pokud v(φ) = 1
 
-Formule φ je _nepravdivá při valuacie_ v, pokud v(φ) = 0
+Formule φ je _nepravdivá při valuaci_ v, pokud v(φ) = 0
 
 Formule φ je _tautologie_, pokud pro každou valuaci v platí v(φ) = 1; zapisujeme ⊨ φ
 
