@@ -110,7 +110,7 @@ Intelx86
 
 1D 2C 3B 4A
 
-### Big-endiand
+### Big-endian
 = bajt nejvyššího řádu je uložen na nejnižší adrese
 
 4A 3B 2C 1D
