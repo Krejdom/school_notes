@@ -143,7 +143,7 @@ DFA může být ve výsledku až exponenciálně větší.
 
 ## Regulární výrazy
 
-_Definice množiny regulárních výrazů nad abecedou Σ. RE je:
+Definice množiny regulárních výrazů nad abecedou Σ. RE je:
 
 - ϵ, Ø a a pro každé a ∈ Σ
 - (E.F), (E+F), (E)*, pokud E a F jsou RE
@@ -198,7 +198,7 @@ F ⊂ Q ... množina _akceptujících stavů_
 - sjednocení
 - průnik
 - rozdíl
-- doplňek
+- doplněk
 - zřetězení
 - iterace (i pozitivní)
 - mocnění
