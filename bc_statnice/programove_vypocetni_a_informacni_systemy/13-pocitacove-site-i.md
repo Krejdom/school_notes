@@ -13,7 +13,7 @@
 
 | vrstva            | funkce | konverze | protokoly |
 |-------------------|--------|-----------|----------|
-| fyzická           | přenos bitů mezi odesílatelem a příjemcem řízení dějů v přenosovém médiu | bity <-> signály | ALOHA |
+| fyzická           | přenos bitů mezi odesílatelem a příjemcem, řízení dějů v přenosovém médiu | bity <-> signály | ALOHA |
 | datového spoje    | zaručuje spolehlivost, brání zahlcení, detekuje chyby, řídí přístup k médiu | rámce <-> pakety | |
 | síťová            | tvorba paketů, fragmentace, IP adresace, směrování, mapování IP <-> MAC, monitoring, propojování fyzických sítí | | IPv4, IPv6 |
 | transportntí      | QoS, adresace portů, zajišťuje spolehlivost, poskytuje logický kanál |  data <-> pakety |TCP |
