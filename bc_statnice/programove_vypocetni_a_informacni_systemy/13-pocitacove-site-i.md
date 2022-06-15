@@ -11,20 +11,24 @@
 
 ## ISO/OSI model
 
-| fyzická | přenos bitů mezi odesílatelem a příjemcem řízení dějů v přenosovém médiu, bity <-> signály |
-| datového spoje | zaručuje spolehlivost, brání zahlcení, detekuje chyby, řídí přístup k médiu, rámce <-> pakety |
-| síťová | tvorba paketů, fragmentace, IP adresace | směrování | mapování IP <-> MAC | monitoring, propojování fyzických sítí |
-| transportntí | QoS, adresace portů, zajišťuje spolehlivost, poskytuje logický kanál, data <-> pakety |
-| relační | správa relací (spojení mezi dvěma koncovými účastníky), synchronizace |
-| prezentační | renvertuje data do jednotného formátu, šifrování, komprese |
-| aplikační | poskytuje rozhraní uživateli |
+| vrstva            | funkce | konverze | protokoly |
+|-------------------|--------|-----------|----------|
+| fyzická           | přenos bitů mezi odesílatelem a příjemcem řízení dějů v přenosovém médiu | bity <-> signály | ALOHA |
+| datového spoje    | zaručuje spolehlivost, brání zahlcení, detekuje chyby, řídí přístup k médiu | rámce <-> pakety | |
+| síťová            | tvorba paketů, fragmentace, IP adresace, směrování, mapování IP <-> MAC, monitoring, propojování fyzických sítí | | IPv4, IPv6 |
+| transportntí      | QoS, adresace portů, zajišťuje spolehlivost, poskytuje logický kanál |  data <-> pakety |TCP |
+| relační           | správa relací (spojení mezi dvěma koncovými účastníky), synchronizace | | SSL |
+| prezentační       | renvertuje data do jednotného formátu, šifrování, komprese | | ASCII |
+| aplikační         | poskytuje rozhraní uživateli | | PGP |
 
 ## TCP/IP model
 
-| vrstva přístupu k síti | fyzická + datového spoje |
-| síťová (internetová) vrstva | síťová |
-| transportní vrstva | transportní |
-| aplikační vrstva | relační + prezentační + aplikační |
+| TCP/IP vrstva                 | ekvivalent v ISO/OSI |
+|-------------------------------|----------------------|
+| vrstva přístupu k síti        | fyzická + datového spoje |
+| síťová (internetová) vrstva   | síťová |
+| transportní vrstva            | transportní |
+| aplikační vrstva              | relační + prezentační + aplikační |
 
 ## Adresace
 
