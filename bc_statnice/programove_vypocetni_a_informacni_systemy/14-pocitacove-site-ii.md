@@ -12,7 +12,7 @@
 
 _topologie_ = uspořádání stanic na médiu
 
-_kolizní domna_ skupina stanic, ve které když dojde k vysílání více stanic, dojde ke kolizi
+_kolizní doména_ skupina stanic, ve které když dojde k vysílání více stanic, dojde ke kolizi
 
 ### Propojovací zařízení v LAN:
 
